@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    
+    int i,a,b,c;
 	char yt;
 	double a1c[5]={4,4,5,3,3};
 	double a2c[5]={3,3,4,2,3};
@@ -102,12 +102,29 @@ int main(){
 	cout<<"\n";
 	cout<<"Terima Kasih"<<endl;
 	atas:
+	
 	cout <<"Masukkan Data "<<endl;
 	cout <<"======================="<<endl;
-	cout <<"Masukkan Data A1C1 : ";cin>>a1c[0]; cout<<" A1C2 : ";cin>>a1c[1]; cout<<" A1C3 : ";cin>>a1c[2]; cout<<" A1C4 : ";cin>>a1c[3]; cout<<" A1C5 : ";cin>>a1c[4]; cout<<endl;
-	cout <<"Masukkan Data A2C1 : ";cin>>a2c[0]; cout<<" A2C2 : ";cin>>a2c[1]; cout<<" A2C3 : ";cin>>a2c[2]; cout<<" A2C4 : ";cin>>a2c[3]; cout<<" A2C5 : ";cin>>a2c[4]; cout<<endl;
-	cout <<"Masukkan Data A3C1 : ";cin>>a3c[0]; cout<<" A3C2 : ";cin>>a3c[1]; cout<<" A3C3 : ";cin>>a3c[2]; cout<<" A3C4 : ";cin>>a3c[3]; cout<<" A3C5 : ";cin>>a3c[4]; cout<<endl;
-	cout <<"Masukkan Data W1 : ";cin>>w[0]; cout<<" W2 : ";cin>>w[1]; cout<<" W3 : ";cin>>w[2]; cout<<" W4 : ";cin>>w[3]; cout<<" W5 : ";cin>>w[4]; cout<<endl;
+	cout <<"Masukkan Data A1C[5] : ";
+	for ( i = 0; i < 5 ; i++)
+	{
+	cin>>a1c[i]; cout<<endl;
+	}
+	cout <<"Masukkan Data A2C[5] : ";
+	for ( a = 0; a < 5 ; a++)
+	{
+	cin>>a2c[a]; cout<<endl;
+	}
+	cout <<"Masukkan Data A3C[5] : ";
+	for ( b = 0; b < 5 ; b++)
+	{
+	cin>>a3c[b];  cout<<endl;
+	}
+	cout <<"Masukkan Data W[5] : ";
+	for ( c = 0; c < 5 ; c++)
+	{
+	cin>>w[c]; 	cout<<endl;
+	}
 	cout <<endl;
 	
 	mc[0]=max(a1c[0],max(a2c[0],a3c[0]));
